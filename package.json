@@ -1,0 +1,23 @@
+{
+  "name": "cf-downloader",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/yargs": "^17.0.33",
+    "yargs": "^17.7.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun --env-file=.config run ./src/index.ts"
+  },
+  "dependencies": {
+    "node-stream-zip": "^1.15.0",
+    "ora": "^8.1.0",
+    "progress-bar-capture": "^1.0.0"
+  },
+  "bin": {
+    "nebula": "./src/cli/index.ts"
+  }
+}
